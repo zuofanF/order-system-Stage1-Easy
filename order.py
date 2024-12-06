@@ -3,8 +3,8 @@ from menu import menu
 # Define a Function to take orders 
 def take_order():
     '''The Function of taking order'''
-    order = []
-    total = 0
+    order = [] # The List to store the food be ordered
+    total = 0 # The variable to calculate the money
     while True:
         choice = input("Enter the number of the food you want(finish by enter 0):")
         if choice == '0':
@@ -15,4 +15,4 @@ def take_order():
             print(f"{menu[int(choice)]['name']}を追加しました。")
         else:
             print('無効な番号です。')
-    return order, total
+    return order, total # The return value can be two
